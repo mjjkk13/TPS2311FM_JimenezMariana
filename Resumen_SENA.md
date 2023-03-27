@@ -115,3 +115,6 @@ Si se genera un repository not found
 
 framework
     Entorno de trabajo​ o marco de trabajo​ es un conjunto estandarizado de conceptos, prácticas y criterios para enfocar un tipo de problemática particular que sirve como referencia, para enfrentar y resolver nuevos problemas de índole similar.
+
+Mostrar el último commit
+    git show
