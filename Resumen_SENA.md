@@ -118,3 +118,10 @@ framework
 
 Mostrar el último commit
     git show
+
+git config --global user.name
+    cambiar el usuario
+
+git config --global user.email
+    cambiar el correo
+
