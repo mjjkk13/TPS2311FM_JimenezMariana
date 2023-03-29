@@ -125,3 +125,14 @@ git config --global user.name
 git config --global user.email
     cambiar el correo
 
+git reset hard <SHA-1>
+    eliminar commit
+
+cherry pick
+    comando que permite tomar uno o varios commits de otra rama o branch sin tener que hacer un merge completo
+
+responsive
+    adaptar al tamaño de los dispositivos
+
+Offset
+    Move columns
