@@ -139,3 +139,4 @@ Offset
 
 git config --global user.name mjjkk13
 git config --global user.email mjimenez3871@misena.edu.co
+!important (pase lo que pase el color de eso no cambie)
