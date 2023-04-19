@@ -1,18 +1,30 @@
 .text-platzi{
     color: #97c93e!important;
 }
-#header img {
+#header img{
     width: 40px;
 }
-#main .carousel-inner img {
+#main .carousel-inner img{
     max-height: 70vh;  
     object-fit: cover;   
     filter: grayscale(70%);                                                                                                                                                            
 }
-#footer{
-    background-color:#06112e!important;
+#carousel{
+    position: relative;
 }
-#footer a {
+#carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 90);
+    color: white;
+}
+#footer{
+    background-color:#13161c!important;
+}
+#footer a{
     color: white;
     
 }
