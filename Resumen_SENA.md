@@ -177,7 +177,30 @@ Fiel a la información
 
     Naturales: son inherentes al objeto como el número de serie
     Clave artificial: no es inherente al objeto y se asigna de manera arbitraria.
+    
+    Simples
+        Los atributos simples son aquellos que tienen un solo componente y que no se pueden dividir en partes más pequeñas con significado propio. Se representan mediante círculos.
+    Compuestos
+        Por contra, los atributos compuestos son aquellos que están formados por varios componentes y que tienen afinidad en cuanto a su significado. Se representan, también, con círculos unidos a cada uno de los atributos de los que se compone.
+    Multivaluados
+    Por otra parte, un atributo multivaluado puede tener varios valores por cada ocurrencia de la entidad. Se representan de manera similar, pero en lugar de un círculo son dos, uno dentro de otro.
+    
 
 Clase
     definiciones de las propiedades y comportamiento de un tipo de objeto concreto. La instanciación es la lectura de estas definiciones y la creación de un objeto a partir de ellas.
+
+Objeto
+
+    Se trata de un ente abstracto usado en programación que permite separar los diferentes componentes de un programa, simplificando así su elaboración, depuración y posteriores mejoras.
+    Los objetos integran, a diferencia de los métodos procedurales, tanto los procedimientos como las variables y datos referentes al objeto.
+    A los objetos se les otorga ciertas características en la vida real. Cada parte del programa que se desea realizar es tratado como objeto, siendo así estas partes independientes las unas de las otras.Los objetos se componen de 3 partes fundamentales: metodos, eventos y atributos.
+
+Métodos
+
+    Son aquellas funciones que permite efectuar el objeto y que nos rinden algún tipo de servicio durante el transcurso del programa.
+    Determinan a su vez como va a responder el objeto cuando recibe un mensaje.
+
+Instancia:
+
+    Se llama instancia a todo objeto que derive de algún otro. De esta forma, todos los objetos son instancias de algún otro, menos la clase Object que es la madre de todas.
 
