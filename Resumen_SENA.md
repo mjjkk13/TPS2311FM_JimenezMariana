@@ -160,6 +160,8 @@ Fork
 
 ## BASES DE DATOS RELACIONALES
 
+Las bases de -datos relacionales- se basan en la organización de la información en partes pequeñas que se integran mediante identificadores; a diferencia de las bases de -datos no relacionales- que, como su nombre lo indica, no tienen un identificador que sirva para relacionar dos o más conjuntos de datos.
+
 Almacena y proporciona acceso a puntos de datos relacionados entre sí.
 Algebra relacional
 Perdure por el tiempo
@@ -228,7 +230,7 @@ Fecha/hora
     DATETIME
     TIMESTAMP
 
-Lógicoas
+Lógicos
     BOOLEAN
 
 # RESTRICCIONES
@@ -247,6 +249,10 @@ DEFAULT
     Coloca un valor por defecto cuando no hay un valor específico
 INDEX
     Se crea por columna para permitir búsquedas más rápidas
+
+# CONSTRAINS
+
+Las CONSTRAINTS son restricciones que se utilizan para limitar el tipo de dato que puede recibir una columna de una tabla.
 
 # NORMALIZACIÓN
 
@@ -301,3 +307,29 @@ Debemos considerar los siguientes puntos:
 Podemos decir que nuestra tabla se encuentra en tercera normal si previamente estaba en segunda forma normal y si no existe ninguna dependencia funcional transitiva entre los atributos que no son clave.
 
 En otras palabras, todo atributo no primo es implicado por la clave primaria en una secuencia no transitiva.
+
+Campos (fila)
+Registro (colunma)
+Dato
+
+# Tipo de datos
+    bigint 
+        Intervalo
+            De -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807	
+                Storage
+                    8 bytes
+    int
+        Intervalo
+            De -2.147.483.648 a 2.147.483.647
+                Storage
+                    4 bytes
+    smallint
+        De -32 768 a 32 767
+            Storage
+                2 bytes
+    tinyint
+        De 0 a 255
+           Storage
+             1 byte
+
+Se coloca FK el id en donde se relaciona muchos (usuarios id FK en posts)
