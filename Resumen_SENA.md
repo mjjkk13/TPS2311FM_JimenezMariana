@@ -363,3 +363,8 @@ Drop
 
 Problema MySQL
 Administrador de tareas, servicios, mysql, click derecho inicializar
+
+# Comandos
+CREATE SCHEMA `platziblog` DEFAULT CHARACTER SET utf8 ;
+CREATE DATABASE test_db(nombre genérico);
+USE DATABASE test_db;
