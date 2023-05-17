@@ -315,7 +315,7 @@ Dato
 # Tipo de datos
     bigint 
         Intervalo
-            De -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807	
+            De -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807
                 Storage
                     8 bytes
     int
@@ -333,3 +333,30 @@ Dato
              1 byte
 
 Se coloca FK el id en donde se relaciona muchos (usuarios id FK en posts)
+
+# Historia de SQL
+
+Structured query language
+
+Lenguaje utilizado para crear bases de datos 
+
+SQL Base de datos relacional
+
+NOSQL
+
+Not Only SQL
+
+Tienen SQL como base
+
+Para base de datos no relacionales
+
+# DDL
+
+Data Definition Lenguage
+Ayuda a crear todo lo relacionado a bases de datos
+Comandos
+Create (database(repositorio), table(proyección a SQL), view(proyección de los datos de la base de datos))
+CREATE DATABASE test_db(nombre genérico);
+USE DATABASE test_db;
+Alter ()
+Drop
