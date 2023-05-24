@@ -365,6 +365,17 @@ Problema MySQL
 Administrador de tareas, servicios, mysql, click derecho inicializar
 
 # Comandos
+
 CREATE SCHEMA `platziblog` DEFAULT CHARACTER SET utf8 ;
+
 CREATE DATABASE test_db(nombre genérico);
+
 USE DATABASE test_db;
+
+CREATE TABLE people (
+person_id int,
+last_name varchar (255),
+first_name varchar (255),
+address varchar (255),
+city varchar (255)
+);
