@@ -392,5 +392,19 @@ CREATE TABLE `platziblog`.`people` (
 CREATE TABLE `platziblog`.`prueba` (
   `test_id` INT NOT NULL AUTO_INCREMENT,
   `last_name` VARCHAR(255) NULL,
-  `first_name` VARCHAR(255) NULL,
+  `first_name`VARCHAR(255) NULL,
   PRIMARY KEY (`person_id`));
+
+# CREATE VIEW y DDL ALTER
+
+CREATE VIEW v_brasil_custumers AS
+SELECT customer_name,
+contact_name
+FROM custumers
+WHERE country = "Brasil";
+
+
+INSERT INTO platziblog.people (person_id, last_name, first_name, address, city) 
+VALUES ('1', 'Vásquez', 'Israel', 'Calle Famosa Num 1', 'México'),
+        ('2', 'Hernández', 'Mónica', 'Reforma 222', 'México'),
+        ('3', 'Alanis', 'Edgar', 'Central 1', 'Monterrey');
