@@ -364,7 +364,7 @@ Drop
 Problema MySQL
 Administrador de tareas, servicios, mysql, click derecho inicializar
 
-# Comandos
+# Comandos query
 
 CREATE SCHEMA `platziblog` DEFAULT CHARACTER SET utf8 ;
 
@@ -379,3 +379,11 @@ first_name varchar (255),
 address varchar (255),
 city varchar (255)
 );
+
+CREATE TABLE `platziblog`.`people` (
+  `person_id` INT NOT NULL AUTO_INCREMENT,
+  `last_name` VARCHAR(255) NULL,
+  `first_name` VARCHAR(255) NULL,
+  `address` VARCHAR(255) NULL,
+  `city` VARCHAR(255) NULL,
+  PRIMARY KEY (`person_id`));
