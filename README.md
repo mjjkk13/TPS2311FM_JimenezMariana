@@ -29,6 +29,9 @@ Desarrollo de proyecto de grado para TPS 2023
                         - Not Only SQL
                         - Tienen SQL como base
                         - Para base de datos no relacionales
+                        - Permanente (disponibilidad)
+                        - Verídica
+                        - Accesible
           DDL create
                   - Data Definition Lenguage
                   - Ayuda a crear todo lo relacionado a bases de datos

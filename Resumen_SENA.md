@@ -350,6 +350,10 @@ Tienen SQL como base
 
 Para base de datos no relacionales
 
+Permanente (disponibilidad)
+Verídica
+Accesible
+
 # DDL
 
 Data Definition Lenguage
