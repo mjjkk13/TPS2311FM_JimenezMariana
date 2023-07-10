@@ -86,7 +86,7 @@ Desarrollo de proyecto de grado para TPS 2023
           Creando Platziblog: tablas dependientes
           Creando Platziblog: tablas transitivas
 
-## Consultas a una base de datos
+     
 
           ¿Por qué las consultas son tan importantes?
           Estructura básica de un Query
