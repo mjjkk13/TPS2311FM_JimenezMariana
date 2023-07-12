@@ -90,6 +90,12 @@ Desarrollo de proyecto de grado para TPS 2023
 
           ¿Por qué las consultas son tan importantes?
           Estructura básica de un Query
+                SELECT city, count (*) AS total
+                FROM people
+                WHERE active = true
+                GROUP BY city
+                ORDER BY total DESC
+                HAVING total >= 2;
           SELECT
           Playground: SELECT en SQL
           FROM y SQL JOINs

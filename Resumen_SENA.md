@@ -249,6 +249,8 @@ DEFAULT
     Coloca un valor por defecto cuando no hay un valor específico
 INDEX
     Se crea por columna para permitir búsquedas más rápidas
+AUTO_INCREMENT
+    Genera automáticamente valores numéricos secuenciales
 
 # CONSTRAINS
 
@@ -413,5 +415,33 @@ VALUES ('1', 'Vásquez', 'Israel', 'Calle Famosa Num 1', 'México'),
         ('2', 'Hernández', 'Mónica', 'Reforma 222', 'México'),
         ('3', 'Alanis', 'Edgar', 'Central 1', 'Monterrey');
 
-# Consultas a una base de datos
+# DML
 
+Data Manipulation Language
+SELECT, esta sentencia se utiliza para realizar consultas sobre los datos.
+INSERT, con esta instrucción podemos insertar los valores en una base de datos.
+UPDATE, sirve para modificar los valores de uno o varios registros.
+DELETE, se utiliza para eliminar las filas de una tabla.
+
+# DCL
+
+Data Control Language
+GRANT, permite otorgar permisos.
+REVOKE, elimina los permisos que previamente se han concedido.
+
+# TCL
+Transactional Control Language
+COMMIT: Empleado para guardar el trabajo hecho.
+ROLLBACK: Utilizado para deshacer la modificación que hice desde el último COMMIT.
+
+# Estructura básica de un Query
+
+SELECT city, count (*) AS total
+                FROM people
+                WHERE active = true
+                GROUP BY city
+                ORDER BY total DESC
+                HAVING total >= 2;
+SELECT *
+FROM categorias
+WHERE fecha_publicacion >'2024-01-01';
