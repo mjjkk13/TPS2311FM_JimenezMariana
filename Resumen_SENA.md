@@ -445,3 +445,10 @@ SELECT city, count (*) AS total
 SELECT *
 FROM categorias
 WHERE fecha_publicacion >'2024-01-01';
+
+SELECT titulo, fecha_publicacion, estatus
+FROM categorias;
+
+# POO 
+Propiedades (atributos)
+Métodos (funciones)
