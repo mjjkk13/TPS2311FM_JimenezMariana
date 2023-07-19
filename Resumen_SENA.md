@@ -457,3 +457,7 @@ Métodos (funciones)
 JOIN (agrupar conjuntos)
 Diferencia LEFT JOIN - RIGHT JOIN
 INNER JOIN (Intersección)
+
+SELECT *
+FROM usuarios;
+LEFT JOIN posts ON usuarios.id = posts.usuario_id;
