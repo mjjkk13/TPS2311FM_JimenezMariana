@@ -452,3 +452,8 @@ FROM categorias;
 # POO 
 Propiedades (atributos)
 Métodos (funciones)
+
+# FROM y SQL JOINs
+JOIN (agrupar conjuntos)
+Diferencia LEFT JOIN - RIGHT JOIN
+INNER JOIN (Intersección)

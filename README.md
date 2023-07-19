@@ -99,6 +99,9 @@ Desarrollo de proyecto de grado para TPS 2023
           SELECT
           Playground: SELECT en SQL
           FROM y SQL JOINs
+            JOIN (agrupar conjuntos)
+            Diferencia LEFT JOIN - RIGHT JOIN
+            INNER JOIN (Intersección)
           Utilizando la sentancia FROM
           Playground: FROM y LEFT JOIN en SQL
           WHERE
