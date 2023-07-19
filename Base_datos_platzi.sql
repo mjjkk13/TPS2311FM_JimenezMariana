@@ -172,30 +172,13 @@ INSERT INTO `platziblog`.`posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES
 INSERT INTO `platziblog`.`posts_etiquetas` (`id`,`post_id`,`etiqueta_id`) VALUES (53,52,19);
   
 
-CREATE TABLE `platziblog`.`courses` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(255) NULL,
-  `teacher_id` INT NULL,
-  PRIMARY KEY (`id`));
-  INSERT INTO `platziblog`.`courses` (`id`,`name`,`teacher_id`) VALUES (100,'Fundamentos de Base de Datos','1');
-  INSERT INTO `platziblog`.`courses` (`id`,`name`,`teacher_id`) VALUES (200,'Curso de MySQL y MariaDB','0');
-  INSERT INTO `platziblog`.`courses` (`id`,`name`,`teacher_id`) VALUES (260,'Curso de Data Science','8');
-  INSERT INTO `platziblog`.`courses` (`id`,`name`,`teacher_id`) VALUES (350,'Curso de Firebase','16');
-  INSERT INTO `platziblog`.`courses` (`id`,`name`,`teacher_id`) VALUES (749,'Curso de Python','30');
-  INSERT INTO `platziblog`.`courses` (`id`,`name`,`teacher_id`) VALUES (750,'Curso de React.js','0');
 
-CREATE TABLE `platziblog`.`teachers` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(255) NULL,
-  `course_id` varchar(200) NULL,
-  PRIMARY KEY (`id`));
-  INSERT INTO `platziblog`.`teachers` (`id`,`name`,`course_id`) VALUES (1,'Israel','100');
-  INSERT INTO `platziblog`.`teachers` (`id`,`name`,`course_id`) VALUES (5,'Carlos','0');
-  INSERT INTO `platziblog`.`teachers` (`id`,`name`,`course_id`) VALUES (8,'Silvia','260');
-  INSERT INTO `platziblog`.`teachers` (`id`,`name`,`course_id`) VALUES (16,'Leomaris','350');
-  INSERT INTO `platziblog`.`teachers` (`id`,`name`,`course_id`) VALUES (30,'Nico','749');
-  INSERT INTO `platziblog`.`teachers` (`id`,`name`,`course_id`) VALUES (31,'Juan','750');
-  
-  SELECT *
-  FROM usuarios
-	LEFT JOIN posts ON usuarios.id = posts.usuario_id;
+SELECT *
+FROM usuarios
+LEFT JOIN posts ON usuarios.id = posts.usuario_id
+WHERE posts.usuario_id IS NULL;
+
+SELECT *
+FROM usuarios
+RIGHT JOIN posts ON usuarios.id = posts.usuario_id
+WHERE posts.usuario_id IS NULL;
