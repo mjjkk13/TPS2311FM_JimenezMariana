@@ -1,4 +1,4 @@
-CREATE SCHEMA `platziblog` DEFAULT CHARACTER SET utf8 ;
+CREATE SCHEMA `platziblog` DEFAULT CHARACTER SET utf8mb4 ;
 USE `platziblog`;
 CREATE TABLE `platziblog`.`categorias` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -201,4 +201,38 @@ FROM usuarios
 RIGHT JOIN posts ON usuarios.id = posts.usuario_id
 WHERE posts.usuario_id IS NULL;
 
+SELECT *
+FROM posts
+WHERE id <50;
 
+SELECT *
+FROM posts
+WHERE id !=50;
+
+SELECT *
+FROM posts
+WHERE estatus = 'activo';
+
+SELECT *
+FROM posts
+WHERE estatus = 'inactivo';
+
+SELECT *
+FROM posts
+WHERE estatus != 'inactivo';
+
+SELECT *
+FROM posts
+WHERE estatus != 'activo';
+
+SELECT *
+FROM posts
+WHERE titulo LIKE '%escandalo%';
+
+SELECT *
+FROM posts
+WHERE fecha_publicacion > '2025-01-01';
+
+SELECT *
+FROM posts
+WHERE fecha_publicacion BETWEEN '2023-01-01' AND '2025-12-31';

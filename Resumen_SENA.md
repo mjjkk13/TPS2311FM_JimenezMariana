@@ -81,7 +81,7 @@ Subimos un tag
 Busca los cambios nuevos y actualiza el repositorio
 
     git pull origin <nameBranch>
-    
+
 Remover
 
     rm -rf .git
@@ -101,7 +101,7 @@ Eliminar permanentemente
 Contenido dentro del archivo
 
     cat
-    
+
 crear repositorio
     mkdir
 
@@ -138,7 +138,7 @@ Offset
     Move columns
 
 git config --global user.name mjjkk13
-git config --global user.email mjimenez3871@misena.edu.co
+git config --global user.email <mjimenez3871@misena.edu.co>
 !important (pase lo que pase el color de eso no cambie)
 
 __________________________________________________________________________________________________________________________________________________________________________________________________
@@ -186,7 +186,6 @@ Fiel a la información
         Por contra, los atributos compuestos son aquellos que están formados por varios componentes y que tienen afinidad en cuanto a su significado. Se representan, también, con círculos unidos a cada uno de los atributos de los que se compone.
     Multivaluados
     Por otra parte, un atributo multivaluado puede tener varios valores por cada ocurrencia de la entidad. Se representan de manera similar, pero en lugar de un círculo son dos, uno dentro de otro.
-    
 
 Clase
     definiciones de las propiedades y comportamiento de un tipo de objeto concreto. La instanciación es la lectura de estas definiciones y la creación de un objeto a partir de ellas.
@@ -208,7 +207,7 @@ Instancia:
 
 ## DIAGRAMA ER
 
-Tipo de diagrama de flujo que ilustra cómo las "entidades", como personas, objetos o conceptos, se relacionan entre sí dentro de un sistema. 
+Tipo de diagrama de flujo que ilustra cómo las "entidades", como personas, objetos o conceptos, se relacionan entre sí dentro de un sistema.
 
 # TIPOS DE DATO
 
@@ -269,6 +268,7 @@ las bases de datos se normalizan para que tu puedas:
 Para poder decir que nuestra base de datos está normalizada deben respetarse 3 niveles o tipos de normalización. Cada uno de estos niveles cumple con ciertos requisitos que tienen el objetivo de simplificar la información pero sin que haya una pérdida de datos.
 
 # NIVELES
+
 1. La primera Forma Normal (1FN)
 
 Para decir que nuestra tabla está en primera forma normal. Estos son:
@@ -278,21 +278,21 @@ Para decir que nuestra tabla está en primera forma normal. Estos son:
 - Identificar cada grupo de datos relacionados con una clave primaria
 - Para identificar si lo hemos hecho de manera correcta debemos considerar los siguientes aspectos:
 
-* Todos los atributos son atómicos. Un atributo es atómico si los elementos del dominio son indivisibles, mínimos.
-* La tabla contiene una clave primaria única
-* La clave primaria no contiene atributos nulos
-* No debe existir variación en el número de columnas
-* Los campos no clave deben identificarse por la clave (dependencia funcional)
-* Debe existir una independencia del orden tanto de las filas como de las columnas, es decir, si los datos cambian de orden no deben cambiar sus significados.
-* Una tabla no puede tener múltiples valores en cada columna
-* Los datos son atómicos (a cada valor de X le pertenece un valor de Y y viceversa)
+- Todos los atributos son atómicos. Un atributo es atómico si los elementos del dominio son indivisibles, mínimos.
+- La tabla contiene una clave primaria única
+- La clave primaria no contiene atributos nulos
+- No debe existir variación en el número de columnas
+- Los campos no clave deben identificarse por la clave (dependencia funcional)
+- Debe existir una independencia del orden tanto de las filas como de las columnas, es decir, si los datos cambian de orden no deben cambiar sus significados.
+- Una tabla no puede tener múltiples valores en cada columna
+- Los datos son atómicos (a cada valor de X le pertenece un valor de Y y viceversa)
 
 2. La segunda Forma Normal (2FN)
 Debemos seguir los siguientes pasos:
 
-* Tener la 1° forma normal
-* Crear tablas separadas para aquellos grupos de datos que se aplican a varios registros
-* Relacionar estas tablas mediante una clave externa
+- Tener la 1° forma normal
+- Crear tablas separadas para aquellos grupos de datos que se aplican a varios registros
+- Relacionar estas tablas mediante una clave externa
 
 Sabremos si nuestra base de datos tiene en la segunda forma normal si esta previamente cumple con las normas de la Primera forma Normal y si sus atributos no principales dependen de forma completa de la clave principal.
 
@@ -315,6 +315,7 @@ Registro (colunma)
 Dato
 
 # Tipo de datos
+
     bigint 
         Intervalo
             De -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807
@@ -340,7 +341,7 @@ Se coloca FK el id en donde se relaciona muchos (usuarios id FK en posts)
 
 Structured query language
 
-Lenguaje utilizado para crear bases de datos 
+Lenguaje utilizado para crear bases de datos
 
 SQL Base de datos relacional (consulta)
 
@@ -409,8 +410,7 @@ contact_name
 FROM custumers
 WHERE country = "Brasil";
 
-
-INSERT INTO platziblog.people (person_id, last_name, first_name, address, city) 
+INSERT INTO platziblog.people (person_id, last_name, first_name, address, city)
 VALUES ('1', 'Vásquez', 'Israel', 'Calle Famosa Num 1', 'México'),
         ('2', 'Hernández', 'Mónica', 'Reforma 222', 'México'),
         ('3', 'Alanis', 'Edgar', 'Central 1', 'Monterrey');
@@ -430,6 +430,7 @@ GRANT, permite otorgar permisos.
 REVOKE, elimina los permisos que previamente se han concedido.
 
 # TCL
+
 Transactional Control Language
 COMMIT: Empleado para guardar el trabajo hecho.
 ROLLBACK: Utilizado para deshacer la modificación que hice desde el último COMMIT.
@@ -442,18 +443,20 @@ SELECT city, count (*) AS total
                 GROUP BY city
                 ORDER BY total DESC
                 HAVING total >= 2;
-SELECT *
+SELECT*
 FROM categorias
 WHERE fecha_publicacion >'2024-01-01';
 
 SELECT titulo, fecha_publicacion, estatus
 FROM categorias;
 
-# POO 
+# POO
+
 Propiedades (atributos)
 Métodos (funciones)
 
 # FROM y SQL JOINs
+
 JOIN (agrupar conjuntos)
 Diferencia LEFT JOIN - RIGHT JOIN
 INNER JOIN (Intersección)
