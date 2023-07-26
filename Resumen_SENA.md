@@ -468,3 +468,9 @@ WHERE   posts.usuario_id IS NULL;
 
 INNER JOIN posts ON usuarios.id =posts.usuario_id;
 UNION
+
+# WHERE NULO Y NO NULO
+
+SELECT *
+FROM posts
+WHERE usuario_id IS NULL;

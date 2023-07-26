@@ -236,3 +236,36 @@ WHERE fecha_publicacion > '2025-01-01';
 SELECT *
 FROM posts
 WHERE fecha_publicacion BETWEEN '2023-01-01' AND '2025-12-31';
+
+SELECT *
+FROM posts
+WHERE YEAR(fecha_publicacion) BETWEEN '2023' AND '2024';
+
+SELECT *
+FROM posts
+WHERE MONTH(fecha_publicacion) = '04';
+
+SELECT *
+FROM posts
+WHERE usuario_id IS NULL;
+
+SELECT *
+FROM
+posts
+WHERE usuario_id IS NOT NULL
+AND estatus='activo'
+AND id < 50
+AND categoria_id = 2
+AND YEAR(fecha_publicacion) = '2025';
+
+SELECT estatus, SUM(id) post_quantity
+FROM posts
+GROUP BY estatus;
+
+SELECT estatus, COUNT(*) post_quantity
+FROM posts
+GROUP BY estatus;
+
+SELECT MONTHNAME(fecha_publicacion) AS post_month, COUNT(*) AS post_quantity
+FROM posts
+GROUP BY post_month;
