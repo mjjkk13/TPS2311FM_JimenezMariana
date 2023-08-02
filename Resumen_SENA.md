@@ -474,3 +474,7 @@ UNION
 SELECT *
 FROM posts
 WHERE usuario_id IS NULL;
+
+SELECT estatus, COUNT(*) post_quantity
+FROM posts
+GROUP BY estatus;
