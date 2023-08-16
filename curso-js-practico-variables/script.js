@@ -1,0 +1,10 @@
+let nombre = 'Mariana'
+let apellido = 'Jiménez Villa'
+let username = 'MJJKK13_'
+let edad = '17'
+let email = 'marianajimenezv2006@gmail.com'
+let EsMayorDeEdad = 'false'
+let dineroAhorrado = '300'
+let deudas = '20'
+let nombreCompleto = nombre + ' ' + apellido;
+let dineroReal = dineroAhorrado - deudas;

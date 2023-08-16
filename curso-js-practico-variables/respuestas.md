@@ -34,14 +34,14 @@ EL operador que nos permite sumar o concatenar es +. Este operador nos permite s
 ### 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
 
 ```
-let nombre = 'Juan David';
-let apellido = 'Catro Gallego';
-let username = 'juandc';
-let edad = 19;
-let mail = 'juanito@alcachofa.xyz';
-let esMayorDeEdad = true;
-let dineroAhorrado = 1000;
-let deudas = 100;
+let nombre = 'Mariana'
+let apellido = 'Jimenez Villa'
+let username = 'MJJKK13_'
+let edad = '17'
+let email = 'marianajimenezv2006@gmail.com'
+let IsMayorDeEdad = 'false'
+let dineroAhorrado = '300'
+let deudas = '20'
 ```
 
 ### 4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
@@ -54,6 +54,7 @@ let nombreCompleto = nombre + ' ' + apellido;
 let dineroReal = dineroAhorrado - deudas;
 ```
 
+![Alt text](image.png)
 
 
 ## Funciones
@@ -61,28 +62,62 @@ let dineroReal = dineroAhorrado - deudas;
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es una función?
+
+Las funciones nos permiten encapsular (guardar) bloques de código para reutilizarlos y ejecutarlos en el futuro.
+
+```
+function nombreCompleto(name, lastName){
+    return name + ' ' + lastName
+}
+```
+![Alt text](image-1.png)
+
 - ¿Cuándo me sirve usar una función en mi código?
+
+Nos sirve cuando tenemos variables con bloques de código muy parecidos (con cambios que podrían ser parámetros y argumentos) que podemos encapsular para reutilizar más de una vez en el futuro.
+
+También nos sirve para ordenar y mejorar la legibilidad de nuestro código.
+
 - ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+
+Las funciones reciben parámetros cuando las creamos. Y les enviamos argumentos cuando las ejecutamos.
 
 ### 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
 ```
-const name = "Juan David";
-const lastname = "Castro Gallego";
+const name = "Mariana";
+const lastname = "Jimenez Villa";
 const completeName = name + lastname;
-const nickname = "juandc";
+const nickname = "Mariane";
 
 console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
-```
 
+function saludo (name, lastname, username){
+    const completeName = nombreCompleto(name, lastname);
+    
+    console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+    
+}
+```
+![Alt text](image-2.png)
 
 ## Condicionales
 
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un condicional?
+
+Son la forma en que ejecutamos un bloques de código u otro dependiendo de alguna condición o validación
+
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+
+IF (else y else if), switch
+El condicional if (con else y else if) nos permite hacer validaciones completamente distintas (si así queremos) en cada validación o condicional. En cambio, en el Switch todos los cases se comparan con la misma variable o condición que definimos en el Switch.
+
 - ¿Puedo combinar funciones y condicionales?
+
+
+Si. Las funciones puedenencapsular cualquier bloque de código, incluyendo condicionales.
 
 ### 2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
 

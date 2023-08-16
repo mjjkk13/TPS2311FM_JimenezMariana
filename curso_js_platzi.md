@@ -20,7 +20,7 @@
 
 # Contribución a proyectos
 
-           Conectando GitHub a proyectos de JavaScript
+    Conectando GitHub a proyectos de JavaScript
     Proyectos con JavaScript y GitHub desde cero
     Fork a proyectos en GitHub
     Analizando código de proyectos open-source
