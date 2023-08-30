@@ -50,15 +50,14 @@ function imprimirPrimerElementoArray(arr) {
 }
 
 
-const obj = {
-    Nombre:'Fulanito',
-    edad: 3,
-    Comida: ['Pollo frito', 'vegetales']
+const estudiante = {
+    Nombre:'Mariane',
+    edad: 17,
+    Comida: ['Papas fritas', 'Pizza']
 }
 
-function imprimirPrimerElementoArray(obj) {
+function imprimirElementoPorElemento(estudiante) {
     const arr= object.values(obj);
-    for (let i = 0; i <= arr.length; i++) {
-    console.log("El nombre del usuario es:" + arr[i]); 
-    }
+    for (let i = 0; i <= arr.length; i++) 
+    console.log(arr[i])
 }
