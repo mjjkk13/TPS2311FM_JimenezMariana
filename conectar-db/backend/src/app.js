@@ -13,9 +13,9 @@ const app = express();
 //const {apodo, edad} = juan;
 
 
-app.get('/:id', (req, res)=>{
-    const {id}= req.params
-    res.send(`Peticion GET ${id}`);
+app.get('/:name/:id', (req, res)=>{
+    const {name, id}= req.params
+    res.send(` ${name}: ${id}`);
 });
 
 app.post('/', (req, res)=>{
