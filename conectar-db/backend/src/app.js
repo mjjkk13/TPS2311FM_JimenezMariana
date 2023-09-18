@@ -2,7 +2,13 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', (req, res)=>{
+const juan = {
+    apodo: 'juanito',
+    edad: 29,
+};
+
+app.get('/:id', (req, res)=>{
+    const {id}= req.params
     res.send('Peticion GET');
 });
 
