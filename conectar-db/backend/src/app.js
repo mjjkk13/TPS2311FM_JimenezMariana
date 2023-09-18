@@ -22,9 +22,9 @@ app.get('/:name/:id', (req, res)=>{
 });
 
 app.post('/', (req, res)=>{
-    const {email, passsword} = req.body;
+    const {email, password} = req.body;
     res.send(`${email}: ${password}`);
-})
+});
 
 app.put('/', (req, res)=>{
     res.send('Peticion PUT');
