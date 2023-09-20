@@ -1,9 +1,16 @@
-//CRUD
+const database = require('../config/database');
+const mysql2 = require('mysql2');
 
 const readUser = (req, res) =>{
-    const {name,id} = req.params;
-    console.log('Desde el controlador');
-    res.send(` ${name}: ${id}`);
+    const {id} = req.params;
+    const readQuery = `SELECT * FROM User WHERE id=?;`;
+
+    const query = mysql2.format(readQuery, [id]);
+
+    database.query(query, (err, result)=>{
+        if (err) throw err;
+        res.json(result[0]);
+    });
 };
 
 const createUser = (req, res) => {
