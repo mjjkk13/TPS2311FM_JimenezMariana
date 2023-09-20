@@ -5,6 +5,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// === http ===
 app.get('/:name/:id', (req, res) =>{
     const {name,id} = req.params;
     res.send(` ${name}: ${id}`);
