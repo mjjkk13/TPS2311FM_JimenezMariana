@@ -19,8 +19,17 @@ const readUser = (req, res) =>{
 };
 
 const createUser = (req, res) => {
-    const {email, password} = req.body;
-    res.send(`${email}: ${password}`);
+    const {first_name, age} = req.body;
+
+    const createQuery = `INSERT INTO User(first_name, age) VALUE(?,?)`;
+
+    const query = mysql2.format(createQuery, [first_name, age]);
+
+    database.query(query,(err, result)=>{
+        if (err) throw err; 
+        //console.log(result);
+        res.send({message: 'Usuario creado'});
+    });
 };
 
 const updateUser = (req, res) =>{
