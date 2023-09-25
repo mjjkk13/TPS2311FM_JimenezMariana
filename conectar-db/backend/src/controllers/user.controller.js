@@ -33,7 +33,17 @@ const createUser = (req, res) => {
 };
 
 const updateUser = (req, res) =>{
-    res.send('Peticion PUT');
+    const {id} = req.params;
+    const {first_name, age} = req.body;
+
+    const updateQuery = `UPDATE User SET first_name=?, age=? WHERE id=?`;
+
+    const query = mysql2.format(updateQuery, [first_name, age, id]);
+
+    database.query(query, (err, result)=>{
+        if (err) throw err;
+        res.json({message: 'usuario actualizado'});
+    });
 };
 
 const deleteUser = (req, res) =>{
@@ -45,4 +55,4 @@ module.exports = {
     readUser,
     updateUser,
     deleteUser,
-}
+};
