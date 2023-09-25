@@ -8,7 +8,7 @@ formGet.addEventListener('submit', async (e) => {
   e.preventDefault();
   let message = '';
   const id = e.target.id.value;
-
+  //peticiones mediante fetch
   await fetch(`http://127.0.0.1:3000/user/${id}`)
     .then((response) => response.json())
     .then((data) => {
@@ -18,7 +18,7 @@ formGet.addEventListener('submit', async (e) => {
         message = `ID: ${data.id} | Primer Nombre: ${data.first_name} | Edad: ${data.age}`;
       }
     });
-
+//fin
   document.getElementById('textoGet').innerHTML = message;
 });
 
