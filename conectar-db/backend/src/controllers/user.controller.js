@@ -9,7 +9,12 @@ const readUser = (req, res) =>{
 
     database.query(query, (err, result)=>{
         if (err) throw err;
-        res.json(result[0]);
+        if (result[0] !== undefined){
+            res.json(result[0]);
+        }else{
+            res.json({message:'usuario no encontrado'})
+        };
+        
     });
 };
 
