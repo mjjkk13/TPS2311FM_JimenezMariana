@@ -47,7 +47,17 @@ const updateUser = (req, res) =>{
 };
 
 const deleteUser = (req, res) =>{
-    res.send('Peticion DELETE');
+    const {id} = req.params;
+
+    const deleteQuery = `DELETE FROM User WHERE id=?`
+
+    const query = mysql2.format(deleteQuery, [id]);
+
+    database.query(query, (err, result)=>{
+        if (err) throw err;
+        console.log(result);
+        res.json({message: 'usuario eliminado'});
+    });
 };
 
 module.exports = {
