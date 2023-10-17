@@ -1,0 +1,82 @@
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .message {
+      margin-top: 10px;
+      color: red;
+    }
+
+    .register-link {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .register-form {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Iniciar sesión</h1>
+    <form id="login-form" class="login-form">
+      <label for="username">Nombre de usuario</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+    <p class="message"></p>
+    <a href="registro.html" class="register-link">¿No tienes una cuenta? Regístrate aquí</a>
+  </div>
+
+  <!-- Incluir el archivo JavaScript -->
+  <script src="login.js"></script>
+</body>
+</html>
+
